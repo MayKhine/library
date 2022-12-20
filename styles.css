@@ -1,5 +1,61 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.addBook {
+    font-size: 1rem;
+}
+
 .form-popup {
     display: none;
     position: fixed;
-    background-color: lightgoldenrodyellow;
+    top: 15%;
+    left: 35%;
+    width: 30%;
+    right: 35%;
+    /* background-color: lightblue; */
+    transition: 0.2s ease-in-out;
+
+}
+
+#form {
+    background-color: pink;
+    border: black solid 2px;
+    border-radius: 10px;
+    box-shadow: 5px 10px grey;
+}
+
+#books-container {
+    background-color: darkgray;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+
+}
+
+.book-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+    line-height: 1.2;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: lightblue;
+    border: black solid 2px;
+    margin-left: 20px;
 }

@@ -15,17 +15,17 @@
                     <h3>Add a new book </h3>
                     <p>Title <input type="text" name="title" id="title" required="text"></p>
                     <p>Author <input type="text" name="author" id="author" required="text"></p>
-                    <p>Pages <input type="number" name="pages" id="pages" min="1"></p>
+                    <p>Pages <input type="number" name="pages" id="pages" min="1" required="number"></p>
                     <p>Have you read it? <input type="checkbox" name="readCheck" id="readCheck"></p>
-                    <p>Notes <input type="text" name="notes" id="notes"></p>
-                    <button type="submit" id="addBookSubmit">Add book</button>
+                    <p id="form-note"></p>
+                    <!-- <p id="form-note">Notes <input type="text" name="notes" id="notes"></p> -->
                     <button type="button" id="cancleAddingBook">Cancle</button>
+                    <button type="submit" id="addBookSubmit">Add book</button>
                 </form>
             </div>
-            <div>Hello what blahc </div>
         </div>
 
-        <div class="books"></div>
+        <div class="books-container" id="books-container"></div>
 
     </div>
 </body>
