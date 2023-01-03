@@ -26,14 +26,13 @@ html {
 }
 
 #form {
-    background-color: pink;
+    background-color: rgb(253, 210, 222);
     border: black solid 2px;
     border-radius: 10px;
     box-shadow: 5px 10px grey;
 }
 
 #books-container {
-    background-color: darkgray;
     display: grid;
     gap: 15px;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -46,8 +45,9 @@ html {
     justify-content: space-between;
     font-size: 20px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: rgb(253, 210, 222);
     line-height: 1.2;
+    border: black solid 2px;
 }
 
 button {
@@ -55,7 +55,7 @@ button {
     font-size: 1rem;
     margin: 10px;
     border-radius: 10px;
-    background-color: lightblue;
+    background-color: #baf4ff;
     border: black solid 2px;
     margin-left: 20px;
 }

@@ -56,21 +56,23 @@ const addBookToLibrary = (title, author, pages, read) => {
 
     if (read == true) {
         bookCardReadCheck.innerHTML = 'Read'
-        bookCardReadCheck.style.backgroundColor = 'green'
+        bookCardReadCheck.style.fontWeight = 'bold'
+        bookCardReadCheck.style.backgroundColor = '#b6f5b5'
 
     } else {
-        bookCardReadCheck.innerHTML = 'not read'
-        bookCardReadCheck.style.backgroundColor = 'red'
+        bookCardReadCheck.innerHTML = 'Not read'
+        bookCardReadCheck.style.fontWeight = 'bold'
+        bookCardReadCheck.style.backgroundColor = '#f29191'
     }
 
     bookCardReadCheck.addEventListener('click', event => {
         //change the color 
         if (bookCardReadCheck.innerHTML == 'Read') {
-            bookCardReadCheck.innerHTML = 'not read'
-            bookCardReadCheck.style.backgroundColor = 'red'
+            bookCardReadCheck.innerHTML = 'Not read'
+            bookCardReadCheck.style.backgroundColor = '#f29191'
         } else {
             bookCardReadCheck.innerHTML = 'Read'
-            bookCardReadCheck.style.backgroundColor = 'green'
+            bookCardReadCheck.style.backgroundColor = '#b6f5b5'
         }
     })
 
